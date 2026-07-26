@@ -49,6 +49,7 @@ git clone https://github.com/huzhw/reread-claude-md-skill.git ~/.claude/skills/r
 - [coding-rules](https://github.com/huzhw/coding-rules)：AI 编码协作规范
 - [daily-record](https://github.com/huzhw/daily-record-skill)：日报记录
 - [daily-merge](https://github.com/huzhw/daily-merge-skill)：日报合并
+- [token-3000](https://github.com/huzhw/token-3000-skill)：API 一键切换（公司免费 ↔ 自己花钱）
 
 ## 许可
 

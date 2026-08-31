@@ -8,6 +8,8 @@
 |----|------|
 | 全局路径（junction，Claude Code） | `C:\Users\Administrator\.claude\skills\reread-rules` |
 | 全局路径（junction，DSH） | `C:\Users\Administrator\.dsh\skills\reread-rules` |
+| 全局路径（junction，Codex） | `C:\Users\Administrator\.codex\skills\reread-rules` |
+| 全局路径（junction，Zcode） | `C:\Users\Administrator\.zcode\skills\reread-rules` |
 | 实际目录（F 仓库） | `F:\idea-workspase-skills\reread-rules` |
 | 更名记录 | 原 `reread-claude-md`，2026-08-28 更名为 `reread-rules` |
 
@@ -22,6 +24,8 @@
 ```bash
 cmd /c dir "C:\Users\Administrator\.claude\skills" | findstr reread-rules
 cmd /c dir "C:\Users\Administrator\.dsh\skills"    | findstr reread-rules
+cmd /c dir "C:\Users\Administrator\.codex\skills" | findstr reread-rules
+cmd /c dir "C:\Users\Administrator\.zcode\skills" | findstr reread-rules
 ```
 
 正常应显示 `<JUNCTION>  ...  reread-rules`。
@@ -31,6 +35,8 @@ cmd /c dir "C:\Users\Administrator\.dsh\skills"    | findstr reread-rules
 ```bat
 rd "C:\Users\Administrator\.claude\skills\reread-rules"
 rd "C:\Users\Administrator\.dsh\skills\reread-rules"
+rd "C:\Users\Administrator\.codex\skills\reread-rules"
+rd "C:\Users\Administrator\.zcode\skills\reread-rules"
 ```
 
 > 注意：`rd` 不要加 `/s`，否则可能递归进 F 源目录。删除 junction 只删链接，不删 F 源目录。
